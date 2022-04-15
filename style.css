@@ -2,11 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    transition: .2s linear;
+    outline: none;border: none;
 }
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+}
+
+
 li, a , button{
-    font-family: sans-serif;
+    
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     color:black;
     text-decoration: none;
 }
@@ -15,6 +27,9 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+    
+    
+    
 }
 .logo{
     font-size: 30px;
@@ -45,4 +60,145 @@ button{
 }
 button:hover{
     background-color: lightyellow;
+}
+.menu-items{
+    background-color: antiquewhite;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    
+    cursor: pointer;
+    transition: .2s ease;
+
+}
+img:hover{
+    transform: scale(1.04);
+}
+.menu-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ h1{
+    text-align: center;
+
+}
+.items button{
+    padding: 5px 30px;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+}
+.new{
+    background-color: antiquewhite;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.new{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+.new-flavours button{
+    padding: 5px 30px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    
+    
+
+}
+@media screen and (max-width:676px){
+    .new{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:592px){
+    .new{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+
+        
+    
+    }  
+}
+@media (max-width:768px) {
+    #menu-btn{
+        display: inline-block;
+    } 
+    header .logo.nav-links.btn{
+        position: absolute;
+        top: 99%;left: 0;right: 0;
+        background-color: white;
+        border-top: var(border);
+        border-bottom: var(border);
+    } 
+}
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+        
+        
+    
+    }  
 }
